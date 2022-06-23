@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import commonLibs.AlertControl;
 import commonLibs.ElementControl;
+import commonLibs.MouseControl;
 import commonLibs.SelectDropdownControl;
 
 public class BasePage {
@@ -14,6 +15,8 @@ public class BasePage {
 	
 	AlertControl alertControl;
 	
+	MouseControl mouseControl;
+	
 	public BasePage(WebDriver driver) {
 		
 		elementControl = new ElementControl();
@@ -21,6 +24,8 @@ public class BasePage {
 		dropdownControl = new SelectDropdownControl();
 		
 		alertControl = new AlertControl(driver);
+		
+		mouseControl = new MouseControl(driver);
 	}
 
 }

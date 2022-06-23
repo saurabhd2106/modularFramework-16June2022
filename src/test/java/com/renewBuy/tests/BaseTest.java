@@ -1,6 +1,9 @@
 package com.renewBuy.tests;
 
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -11,6 +14,9 @@ import org.testng.annotations.BeforeSuite;
 import com.renewBuy.pages.AmazonHomepage;
 
 import commonLibs.CommonDriver;
+import commonLibs.ScreenshotControl;
+import utils.ConfigUtils;
+import utils.DateTimeUtils;
 import utils.ReportUtils;
 
 public class BaseTest {
@@ -23,16 +29,39 @@ public class BaseTest {
 
 	ReportUtils reportUtils;
 
-	String projectDirectory;
+	private static String projectDirectory;
 
 	private String reportName;
+
+	ScreenshotControl screenshotControl;
+
+	private static String testExecutionStartTime;
+
+	static Properties configProperties;
+
+	private static String configFilename;
+
+	static {
+		testExecutionStartTime = DateTimeUtils.getCurrentDateAndTime();
+
+		projectDirectory = System.getProperty("user.dir");
+
+		configFilename = String.format("%s/config/%s", projectDirectory, "config.properties");
+
+		try {
+
+			configProperties = ConfigUtils.readconfig(configFilename);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
 
 	@BeforeSuite
 	public void initialise() {
 
-		projectDirectory = System.getProperty("user.dir");
-
-		reportName = String.format("%s/reports/renew-buy-report.html", projectDirectory);
+		reportName = String.format("%s/reports/%s/renew-buy-report.html", projectDirectory, testExecutionStartTime);
 
 		reportUtils = new ReportUtils(reportName);
 
@@ -50,10 +79,8 @@ public class BaseTest {
 
 	@BeforeMethod
 	public void setup() throws Exception {
-		
 
 		reportUtils.createTestCase("Initialise Before Every testcase", "This section inialise browser and page");
-
 
 		openBrowserAndNavigateToAUrl();
 
@@ -64,11 +91,18 @@ public class BaseTest {
 	}
 
 	@AfterMethod
-	public void cleanUp() throws Exception {
-		
-		reportUtils.createTestCase("Initialise After Every testcase", "This section closes browser instance");
+	public void cleanUp(ITestResult testResult) throws Exception {
 
+		if (testResult.getStatus() == ITestResult.SUCCESS) {
+			reportUtils.addLogs("pass", "All test steps passed ");
+		} else if (testResult.getStatus() == ITestResult.FAILURE) {
 
+			takeScreenshotAndaddToReport(testResult);
+
+			reportUtils.addLogs("fail", "One or more test step failed");
+		} else {
+			reportUtils.addLogs("skip", "Test steps skipped");
+		}
 
 		closeBrowerInstance();
 
@@ -80,25 +114,25 @@ public class BaseTest {
 		System.out.println("last method executed in a class");
 
 	}
-	
+
 	@AfterSuite
 	public void cleanupAfterSuite() {
-		
+
 		reportUtils.closeReport();
 	}
 
 	private void openBrowserAndNavigateToAUrl() throws Exception {
-		cmnDriver = new CommonDriver("chrome");
+		cmnDriver = new CommonDriver(configProperties.getProperty("browserType"));
 
-		cmnDriver.navigateToUrl("https://www.amazon.in");
-		
+		cmnDriver.navigateToUrl(configProperties.getProperty("baseUrl"));
+
 		reportUtils.addLogs("info", "Initialised the browser successfully");
 
 	}
 
 	private void pageInitialization() {
 		homepage = new AmazonHomepage(driver);
-		
+
 		reportUtils.addLogs("info", "Initialised the pages successfully");
 
 	}
@@ -106,15 +140,31 @@ public class BaseTest {
 	private void initializeDriverInstance() {
 		driver = cmnDriver.getDriver();
 
+		screenshotControl = new ScreenshotControl(driver);
+
 		reportUtils.addLogs("info", "Initialised the driver instance successfully");
 	}
 
 	private void closeBrowerInstance() throws Exception {
 
 		cmnDriver.closeAllBrowser();
-		
-		
+
 		reportUtils.addLogs("info", "Closed the browser instance successfully");
+	}
+
+	private void takeScreenshotAndaddToReport(ITestResult testResult) throws Exception {
+
+		String testcasename = testResult.getName();
+
+		String testFailureTime = DateTimeUtils.getCurrentDateAndTime();
+
+		String screenshotFilename = String.format("%s/screenshots/%s-%s.png", projectDirectory, testcasename,
+				testFailureTime);
+
+		screenshotControl.captureAndSaveScreenshot(screenshotFilename);
+
+		reportUtils.addScreenshots(screenshotFilename);
+
 	}
 
 }

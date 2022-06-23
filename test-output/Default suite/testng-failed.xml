@@ -7,11 +7,12 @@
         <methods>
           <include name="setup"/>
           <include name="afterClass"/>
-          <include name="initialise"/>
           <include name="preSetup"/>
+          <include name="initialise"/>
           <include name="verifyHomepageTitle"/>
           <include name="cleanUp"/>
           <include name="searchProduct"/>
+          <include name="cleanupAfterSuite"/>
         </methods>
       </class> <!-- com.renewBuy.tests.AmazonTests -->
     </classes>

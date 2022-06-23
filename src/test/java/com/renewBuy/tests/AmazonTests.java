@@ -30,6 +30,8 @@ public class AmazonTests extends BaseTest {
 		String category = "Electronics";
 
 		homepage.searchProduct(product, category);
+		
+		homepage.getAllProduct();
 
 		// Add an assertion
 	}

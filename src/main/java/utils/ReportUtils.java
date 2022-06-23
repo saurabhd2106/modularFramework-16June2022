@@ -55,6 +55,14 @@ public class ReportUtils {
 		}
 
 	}
+	
+	public void addScreenshots(String filname) {
+		
+		filname = filname.trim();
+		
+		extentTest.addScreenCaptureFromPath(filname);
+		
+	}
 
 	public void closeReport() {
 
