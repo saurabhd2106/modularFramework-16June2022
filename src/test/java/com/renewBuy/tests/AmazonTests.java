@@ -3,6 +3,8 @@ package com.renewBuy.tests;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
+import com.renewBuy.utils.TestDataProviderUtils;
+
 public class AmazonTests extends BaseTest {
 
 	@Test(priority = 1000, groups = {"Sanity", "Regression"})
@@ -28,6 +30,20 @@ public class AmazonTests extends BaseTest {
 
 		String product = "Apple Watch";
 		String category = "Electronics";
+
+		homepage.searchProduct(product, category);
+		
+		homepage.getAllProduct();
+
+		// Add an assertion
+	}
+	
+	
+	@Test(priority = 2000, dataProvider = "getProductDataFromExcel", dataProviderClass = TestDataProviderUtils.class)
+	public void searchProductDataDriven(String product, String category) {
+		
+		reportUtils.createTestCase("Verify search product ", "This testcase verifies the search functionality of Product");
+
 
 		homepage.searchProduct(product, category);
 		
