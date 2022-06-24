@@ -1,11 +1,11 @@
 package com.renewBuy.tests;
 
-import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 public class AmazonTests extends BaseTest {
 
-	@Test(priority = 1000)
+	@Test(priority = 1000, groups = {"Sanity", "Regression"})
 	public void verifyHomepageTitle() throws Exception {
 
 		reportUtils.createTestCase("Verify Homepage title", "This testcase verifies the title of the homepage");
@@ -14,7 +14,7 @@ public class AmazonTests extends BaseTest {
 
 		String actualTitle = cmnDriver.getTitle();
 
-		Assert.assertEquals(actualTitle, expectedTitle);
+		AssertJUnit.assertEquals(actualTitle, expectedTitle);
 
 		reportUtils.addLogs("info", "Verify Homepage title is successfull");
 

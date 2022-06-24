@@ -58,7 +58,7 @@ public class BaseTest {
 
 	}
 
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void initialise() {
 
 		reportName = String.format("%s/reports/%s/renew-buy-report.html", projectDirectory, testExecutionStartTime);
@@ -70,14 +70,14 @@ public class BaseTest {
 		reportUtils.addLogs("info", "Initialised the report successfully");
 	}
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void preSetup() {
 
 		System.out.println("First method executed in a class");
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() throws Exception {
 
 		reportUtils.createTestCase("Initialise Before Every testcase", "This section inialise browser and page");
@@ -90,7 +90,7 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void cleanUp(ITestResult testResult) throws Exception {
 
 		if (testResult.getStatus() == ITestResult.SUCCESS) {
@@ -108,14 +108,14 @@ public class BaseTest {
 
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
 
 		System.out.println("last method executed in a class");
 
 	}
 
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void cleanupAfterSuite() {
 
 		reportUtils.closeReport();
