@@ -40,14 +40,14 @@ public class AmazonTests extends BaseTest {
 	
 	
 	@Test(priority = 2000, dataProvider = "getProductDataFromExcel", dataProviderClass = TestDataProviderUtils.class)
-	public void searchProductDataDriven(String product, String category) {
+	public void searchProductDataDriven(String product, String category) throws Exception {
 		
 		reportUtils.createTestCase("Verify search product ", "This testcase verifies the search functionality of Product");
 
 
 		homepage.searchProduct(product, category);
 		
-		homepage.getAllProduct();
+		homepage.getAllProductAndScrollViaJs();
 
 		// Add an assertion
 	}

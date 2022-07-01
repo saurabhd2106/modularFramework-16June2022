@@ -51,4 +51,21 @@ public class AmazonHomepage extends BasePage {
 
 		}
 	}
+	
+	public void getAllProductAndScrollViaJs() throws Exception{
+
+		for (WebElement product : allProductItems) {
+			
+			
+			int xLocation = product.getLocation().x;
+			int yLocation = product.getLocation().y;
+			
+			jsControl.scrollOperation(xLocation, yLocation);
+			
+			String productDetails = elementControl.getText(product);
+			
+			System.out.println(productDetails);
+
+		}
+	}
 }

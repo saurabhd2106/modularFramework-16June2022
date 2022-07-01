@@ -2,24 +2,24 @@
 <testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-24T12:29:51 IST" name="Default suite" finished-at="2022-06-24T12:30:44 IST" duration-ms="53168">
+  <suite started-at="2022-07-01T11:19:04 IST" name="Default suite" finished-at="2022-07-01T11:19:56 IST" duration-ms="52800">
     <groups>
     </groups>
-    <test started-at="2022-06-24T12:29:51 IST" name="Default test" finished-at="2022-06-24T12:30:44 IST" duration-ms="53168">
+    <test started-at="2022-07-01T11:19:04 IST" name="Default test" finished-at="2022-07-01T11:19:56 IST" duration-ms="52800">
       <class name="com.renewBuy.tests.AmazonTests">
-        <test-method is-config="true" signature="initialise()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:29:50 IST" name="initialise" finished-at="2022-06-24T12:29:51 IST" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="initialise()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:03 IST" name="initialise" finished-at="2022-07-01T11:19:04 IST" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialise -->
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:29:51 IST" name="preSetup" finished-at="2022-06-24T12:29:51 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:04 IST" name="preSetup" finished-at="2022-07-01T11:19:04 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:29:51 IST" name="setup" finished-at="2022-06-24T12:30:01 IST" duration-ms="9756" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:04 IST" name="setup" finished-at="2022-07-01T11:19:19 IST" duration-ms="14670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchProductDataDriven(java.lang.String,java.lang.String)[pri:2000, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:30:01 IST" name="searchProductDataDriven" data-provider="getProductDataFromExcel" finished-at="2022-06-24T12:30:18 IST" duration-ms="16616" status="PASS">
+        <test-method signature="searchProductDataDriven(java.lang.String,java.lang.String)[pri:2000, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:19 IST" name="searchProductDataDriven" data-provider="getProductDataFromExcel" finished-at="2022-07-01T11:19:31 IST" duration-ms="12423" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProductDataDriven -->
-        <test-method is-config="true" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:30:18 IST" name="cleanUp" finished-at="2022-06-24T12:30:18 IST" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:32 IST" name="cleanUp" finished-at="2022-07-01T11:19:32 IST" duration-ms="189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,11 +46,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:30:18 IST" name="setup" finished-at="2022-06-24T12:30:27 IST" duration-ms="8928" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:32 IST" name="setup" finished-at="2022-07-01T11:19:43 IST" duration-ms="11661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchProductDataDriven(java.lang.String,java.lang.String)[pri:2000, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:30:27 IST" name="searchProductDataDriven" data-provider="getProductDataFromExcel" finished-at="2022-06-24T12:30:44 IST" duration-ms="16776" status="PASS">
+        <test-method signature="searchProductDataDriven(java.lang.String,java.lang.String)[pri:2000, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:43 IST" name="searchProductDataDriven" data-provider="getProductDataFromExcel" finished-at="2022-07-01T11:19:56 IST" duration-ms="12732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProductDataDriven -->
-        <test-method is-config="true" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:30:44 IST" name="cleanUp" finished-at="2022-06-24T12:30:44 IST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:56 IST" name="cleanUp" finished-at="2022-07-01T11:19:56 IST" duration-ms="205" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,11 +77,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:30:44 IST" name="afterClass" finished-at="2022-06-24T12:30:44 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:56 IST" name="afterClass" finished-at="2022-07-01T11:19:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="cleanupAfterSuite()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-06-24T12:30:44 IST" name="cleanupAfterSuite" finished-at="2022-06-24T12:30:44 IST" duration-ms="540" status="PASS">
+        <test-method is-config="true" signature="cleanupAfterSuite()[pri:0, instance:com.renewBuy.tests.AmazonTests@3c407114]" started-at="2022-07-01T11:19:56 IST" name="cleanupAfterSuite" finished-at="2022-07-01T11:19:57 IST" duration-ms="491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanupAfterSuite -->

@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="86.437" tests="16" errors="0" skipped="4" failures="8">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="webdriver.chrome.driver" value="/Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022/driver/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022/target/test-classes:/Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022/target/classes:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-java/4.1.4/selenium-java-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-api/4.1.4/selenium-api-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.4/selenium-chrome-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/saurabhdhingra/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/saurabhdhingra/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/saurabhdhingra/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/saurabhdhingra/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/saurabhdhingra/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/saurabhdhingra/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/saurabhdhingra/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/saurabhdhingra/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.1.4/selenium-chromium-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-json/4.1.4/selenium-json-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v100/4.1.4/selenium-devtools-v100-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.1.4/selenium-devtools-v101-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.1.4/selenium-devtools-v85-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v99/4.1.4/selenium-devtools-v99-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.1.4/selenium-edge-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.1.4/selenium-firefox-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.1.4/selenium-ie-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.1.4/selenium-opera-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.1.4/selenium-remote-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-codec-http/4.1.76.Final/netty-codec-http-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.76.Final/netty-transport-classes-kqueue-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.76.Final/netty-transport-native-kqueue-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-api/1.13.0/opentelemetry-api-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-context/1.13.0/opentelemetry-context-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.13.0/opentelemetry-exporter-logging-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.13.0-alpha/opentelemetry-sdk-metrics-1.13.0-alpha.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.13.0-alpha/opentelemetry-sdk-logs-1.13.0-alpha.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.13.0/opentelemetry-sdk-common-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.13.0/opentelemetry-sdk-extension-autoconfigure-spi-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.13.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.13.0-alpha.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.13.0/opentelemetry-sdk-trace-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.13.0/opentelemetry-sdk-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.13.0-alpha/opentelemetry-semconv-1.13.0-alpha.jar:/Users/saurabhdhingra/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/saurabhdhingra/.m2/repository/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar:/Users/saurabhdhingra/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/saurabhdhingra/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/saurabhdhingra/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/saurabhdhingra/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/saurabhdhingra/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-http/4.1.4/selenium-http-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/dev/failsafe/failsafe/3.2.3/failsafe-3.2.3.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.1.4/selenium-safari-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-support/4.1.4/selenium-support-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/testng/testng/7.6.0/testng-7.6.0.jar:/Users/saurabhdhingra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/saurabhdhingra/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/saurabhdhingra/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/saurabhdhingra/.m2/repository/org/webjars/jquery/3.6.0/jquery-3.6.0.jar:/Users/saurabhdhingra/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/saurabhdhingra/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/Users/saurabhdhingra/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/saurabhdhingra/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/saurabhdhingra/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/saurabhdhingra/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/saurabhdhingra/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/saurabhdhingra/.m2/repository/org/apache/poi/poi/5.2.0/poi-5.2.0.jar:/Users/saurabhdhingra/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/saurabhdhingra/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/saurabhdhingra/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/saurabhdhingra/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/saurabhdhingra/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/saurabhdhingra/.m2/repository/org/apache/poi/poi-ooxml/5.2.0/poi-ooxml-5.2.0.jar:/Users/saurabhdhingra/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.0/poi-ooxml-lite-5.2.0.jar:/Users/saurabhdhingra/.m2/repository/org/apache/xmlbeans/xmlbeans/5.0.3/xmlbeans-5.0.3.jar:/Users/saurabhdhingra/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/saurabhdhingra/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022/target/surefire/surefirebooter-20220701114110264_3.jar /Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022/target/surefire 2022-07-01T11-40-50_743-jvmRun1 surefire-20220701114110264_1tmp surefire_0-20220701114110264_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022/target/test-classes:/Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022/target/classes:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-java/4.1.4/selenium-java-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-api/4.1.4/selenium-api-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.4/selenium-chrome-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/saurabhdhingra/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/saurabhdhingra/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/saurabhdhingra/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/saurabhdhingra/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/saurabhdhingra/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/saurabhdhingra/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/saurabhdhingra/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/saurabhdhingra/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.1.4/selenium-chromium-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-json/4.1.4/selenium-json-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v100/4.1.4/selenium-devtools-v100-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.1.4/selenium-devtools-v101-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.1.4/selenium-devtools-v85-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v99/4.1.4/selenium-devtools-v99-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.1.4/selenium-edge-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.1.4/selenium-firefox-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.1.4/selenium-ie-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.1.4/selenium-opera-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.1.4/selenium-remote-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-codec-http/4.1.76.Final/netty-codec-http-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.76.Final/netty-transport-classes-kqueue-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.76.Final/netty-transport-native-kqueue-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-api/1.13.0/opentelemetry-api-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-context/1.13.0/opentelemetry-context-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.13.0/opentelemetry-exporter-logging-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.13.0-alpha/opentelemetry-sdk-metrics-1.13.0-alpha.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.13.0-alpha/opentelemetry-sdk-logs-1.13.0-alpha.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.13.0/opentelemetry-sdk-common-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.13.0/opentelemetry-sdk-extension-autoconfigure-spi-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.13.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.13.0-alpha.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.13.0/opentelemetry-sdk-trace-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.13.0/opentelemetry-sdk-1.13.0.jar:/Users/saurabhdhingra/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.13.0-alpha/opentelemetry-semconv-1.13.0-alpha.jar:/Users/saurabhdhingra/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/saurabhdhingra/.m2/repository/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar:/Users/saurabhdhingra/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/saurabhdhingra/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/saurabhdhingra/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/saurabhdhingra/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/saurabhdhingra/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/saurabhdhingra/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-http/4.1.4/selenium-http-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/dev/failsafe/failsafe/3.2.3/failsafe-3.2.3.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.1.4/selenium-safari-driver-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/seleniumhq/selenium/selenium-support/4.1.4/selenium-support-4.1.4.jar:/Users/saurabhdhingra/.m2/repository/org/testng/testng/7.6.0/testng-7.6.0.jar:/Users/saurabhdhingra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/saurabhdhingra/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/saurabhdhingra/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/saurabhdhingra/.m2/repository/org/webjars/jquery/3.6.0/jquery-3.6.0.jar:/Users/saurabhdhingra/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/saurabhdhingra/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/Users/saurabhdhingra/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/saurabhdhingra/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/saurabhdhingra/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/saurabhdhingra/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/saurabhdhingra/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/saurabhdhingra/.m2/repository/org/apache/poi/poi/5.2.0/poi-5.2.0.jar:/Users/saurabhdhingra/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/saurabhdhingra/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/saurabhdhingra/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/saurabhdhingra/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/saurabhdhingra/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/saurabhdhingra/.m2/repository/org/apache/poi/poi-ooxml/5.2.0/poi-ooxml-5.2.0.jar:/Users/saurabhdhingra/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.0/poi-ooxml-lite-5.2.0.jar:/Users/saurabhdhingra/.m2/repository/org/apache/xmlbeans/xmlbeans/5.0.3/xmlbeans-5.0.3.jar:/Users/saurabhdhingra/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/saurabhdhingra/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/saurabhdhingra"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022/target/surefire/surefirebooter-20220701114110264_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
+    <property name="user.name" value="saurabhdhingra"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.4"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/saurabhdhingra/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/5n/t83sd42x5rn7ckqdm6szjc800000gn/T/"/>
+    <property name="java.version" value="17.0.1"/>
+    <property name="user.dir" value="/Users/saurabhdhingra/eclipse-workspace/ModularFramework-16062022"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/saurabhdhingra/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="setup" classname="com.renewBuy.tests.AmazonTests" time="1.021">
+    <failure message="Cannot invoke &quot;utils.ReportUtils.createTestCase(String, String)&quot; because &quot;this.reportUtils&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "utils.ReportUtils.createTestCase(String, String)" because "this.reportUtils" is null
+	at com.renewBuy.tests.BaseTest.setup(BaseTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+    <system-out><![CDATA[First method executed in a class
+First method executed in a class
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="setup" classname="com.renewBuy.tests.AmazonTests" time="0.01">
+    <failure message="Cannot invoke &quot;utils.ReportUtils.createTestCase(String, String)&quot; because &quot;this.reportUtils&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "utils.ReportUtils.createTestCase(String, String)" because "this.reportUtils" is null
+	at com.renewBuy.tests.BaseTest.setup(BaseTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+  </testcase>
+  <testcase name="setup" classname="com.renewBuy.tests.AmazonTests" time="0.991">
+    <failure message="Cannot invoke &quot;utils.ReportUtils.createTestCase(String, String)&quot; because &quot;this.reportUtils&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "utils.ReportUtils.createTestCase(String, String)" because "this.reportUtils" is null
+	at com.renewBuy.tests.BaseTest.setup(BaseTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+    <system-err><![CDATA[ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 53897
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="setup" classname="com.renewBuy.tests.AmazonTests" time="0.001">
+    <failure message="Cannot invoke &quot;utils.ReportUtils.createTestCase(String, String)&quot; because &quot;this.reportUtils&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "utils.ReportUtils.createTestCase(String, String)" because "this.reportUtils" is null
+	at com.renewBuy.tests.BaseTest.setup(BaseTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+  </testcase>
+  <testcase name="verifyHomepageTitle" classname="com.renewBuy.tests.AmazonTests" time="0">
+    <skipped message="Cannot invoke &quot;utils.ReportUtils.createTestCase(String, String)&quot; because &quot;this.reportUtils&quot; is null"/>
+  </testcase>
+  <testcase name="verifyHomepageTitle" classname="com.renewBuy.tests.AmazonTests" time="2.816">
+    <system-out><![CDATA[last method executed in a class
+]]></system-out>
+    <system-err><![CDATA[[1656655877.216][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jul 01, 2022 11:41:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 01, 2022 11:41:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: 101
+Jul 01, 2022 11:41:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 103 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="cleanUp[[TestResult name={null} status=CREATED method=AmazonTests.verifyHomepageTitle()[pri:1000, instance:com.renewBuy.tests.AmazonTests@670002] output={null}]](0)" classname="com.renewBuy.tests.AmazonTests" time="0.005">
+    <failure message="Cannot invoke &quot;utils.ReportUtils.addLogs(String, String)&quot; because &quot;this.reportUtils&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "utils.ReportUtils.addLogs(String, String)" because "this.reportUtils" is null
+	at com.renewBuy.tests.BaseTest.cleanUp(BaseTest.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:613)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+  </testcase>
+  <testcase name="searchProduct" classname="com.renewBuy.tests.AmazonTests" time="0">
+    <skipped message="Cannot invoke &quot;utils.ReportUtils.createTestCase(String, String)&quot; because &quot;this.reportUtils&quot; is null"/>
+  </testcase>
+  <testcase name="searchProduct" classname="com.renewBuy.tests.AmazonTests" time="12.559">
+    <system-out><![CDATA[Sponsored
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹51,180
+₹53,900 (5% off)
+Save extra with No Cost EMI
+FREE Delivery by Amazon
+Usually dispatched in 11 days.
+Sponsored
+Apple Watch SE (GPS, 40mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular
+4,945
+₹28,400
+₹29,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Sponsored
+Apple Watch Magnetic Charging Dock
+277
+₹5,850
+₹6,500 (10% off)
+Upto Rs. 1500 off On Citibank Cards
+Get it by Sunday, July 3
+FREE Delivery by Amazon
+Only 1 left in stock.
+Apple Watch SE (GPS, 40mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular
+4,945
+₹28,400
+₹29,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 40mm) - Gold Aluminium Case with Starlight Sport Band - Regular
+4,945
+₹29,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 45mm) - Midnight Aluminium Case with Midnight Sport Band - Regular
+1,527
+₹42,630
+₹44,900 (5% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 44mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular
+4,945
+₹32,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 40mm) - Silver Aluminium Case with Abyss Blue Sport Band - Regular
+4,945
+₹28,400
+₹29,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 41mm) - Midnight Aluminium Case with Midnight Sport Band - Regular
+1,527
+₹39,400
+₹41,900 (6% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Green Aluminium Case with Clover Sport Band - Regular
+1,527
+₹51,200
+₹53,900 (5% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Midnight Aluminium Case with Midnight Sport Band - Regular
+1,527
+₹53,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 44mm) - Gold Aluminium Case with Starlight Sport Band - Regular
+4,945
+₹32,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS + Cellular, 44mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular
+56
+₹35,050
+₹36,900 (5% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 41mm) - Starlight Aluminium Case with Starlight Sport Band - Regular
+1,527
+₹41,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 41mm) - (Product) RED Aluminium Case with (Product) RED Sport Band - Regular
+1,527
+₹41,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Graphite Stainless Steel Case with Graphite Milanese Loop
+1,527
+₹77,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Only 1 left in stock.
+Apple Watch Series 7 (GPS, 45mm) - Green Aluminium Case with Clover Sport Band - Regular
+1,527
+₹42,630
+₹44,900 (5% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 41mm) - Gold Stainless Steel Case with Gold Milanese Loop
+1,527
+₹73,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 45mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹42,630
+₹44,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 41mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹41,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 41mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹48,400
+₹50,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 44mm) - Silver Aluminium Case with Abyss Blue Sport Band - Regular
+4,945
+₹32,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+New Apple Watch Series 6 (GPS + Cellular, 40mm) - Graphite Stainless Steel Case with Black Sport Band
+1,759
+₹69,900
+Save 25% with coupon
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹51,180
+₹53,900 (5% off)
+Save extra with No Cost EMI
+FREE Delivery by Amazon
+Usually dispatched in 11 days.
+Apple Watch Series 7 (GPS + Cellular, 41mm) - Graphite Stainless Steel Case with Graphite Milanese Loop
+1,527
+₹73,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 41mm) - Silver Stainless Steel Case with Silver Milanese Loop
+1,527
+₹73,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 45mm) - (Product) RED Aluminium Case with (Product) RED Sport Band - Regular
+1,527
+₹44,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 57827
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1656655889.030][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jul 01, 2022 11:41:29 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 01, 2022 11:41:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: 101
+Jul 01, 2022 11:41:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 103 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="cleanUp[[TestResult name={null} status=CREATED method=AmazonTests.searchProduct()[pri:2000, instance:com.renewBuy.tests.AmazonTests@670002] output={null}]](0)" classname="com.renewBuy.tests.AmazonTests" time="0.002">
+    <failure message="Cannot invoke &quot;utils.ReportUtils.addLogs(String, String)&quot; because &quot;this.reportUtils&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "utils.ReportUtils.addLogs(String, String)" because "this.reportUtils" is null
+	at com.renewBuy.tests.BaseTest.cleanUp(BaseTest.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:613)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+  </testcase>
+  <testcase name="searchProductDataDriven[Apple Watch, Electronics](1)" classname="com.renewBuy.tests.AmazonTests" time="0">
+    <skipped message="Cannot invoke &quot;utils.ReportUtils.createTestCase(String, String)&quot; because &quot;this.reportUtils&quot; is null"/>
+  </testcase>
+  <testcase name="searchProductDataDriven[Apple Watch, Electronics](1)" classname="com.renewBuy.tests.AmazonTests" time="13.903">
+    <system-out><![CDATA[Sponsored
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹51,180
+₹53,900 (5% off)
+Save extra with No Cost EMI
+FREE Delivery by Amazon
+Usually dispatched in 11 days.
+Sponsored
+Apple Watch SE (GPS, 40mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular
+4,945
+₹28,400
+₹29,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Sponsored
+Apple Watch Magnetic Charging Dock
+277
+₹5,850
+₹6,500 (10% off)
+Upto Rs. 1500 off On Citibank Cards
+Get it by Sunday, July 3
+FREE Delivery by Amazon
+Only 1 left in stock.
+Apple Watch SE (GPS, 40mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular
+4,945
+₹28,400
+₹29,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 40mm) - Gold Aluminium Case with Starlight Sport Band - Regular
+4,945
+₹29,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 45mm) - Midnight Aluminium Case with Midnight Sport Band - Regular
+1,527
+₹42,630
+₹44,900 (5% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 44mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular
+4,945
+₹32,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 40mm) - Silver Aluminium Case with Abyss Blue Sport Band - Regular
+4,945
+₹28,400
+₹29,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 41mm) - Midnight Aluminium Case with Midnight Sport Band - Regular
+1,527
+₹39,400
+₹41,900 (6% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Green Aluminium Case with Clover Sport Band - Regular
+1,527
+₹51,200
+₹53,900 (5% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Midnight Aluminium Case with Midnight Sport Band - Regular
+1,527
+₹53,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 44mm) - Gold Aluminium Case with Starlight Sport Band - Regular
+4,945
+₹32,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS + Cellular, 44mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular
+56
+₹35,050
+₹36,900 (5% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 41mm) - Starlight Aluminium Case with Starlight Sport Band - Regular
+1,527
+₹41,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 41mm) - (Product) RED Aluminium Case with (Product) RED Sport Band - Regular
+1,527
+₹41,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Graphite Stainless Steel Case with Graphite Milanese Loop
+1,527
+₹77,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Only 1 left in stock.
+Apple Watch Series 7 (GPS, 45mm) - Green Aluminium Case with Clover Sport Band - Regular
+1,527
+₹42,630
+₹44,900 (5% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 41mm) - Gold Stainless Steel Case with Gold Milanese Loop
+1,527
+₹73,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 45mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹42,630
+₹44,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 41mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹41,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 41mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹48,400
+₹50,900 (5% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch SE (GPS, 44mm) - Silver Aluminium Case with Abyss Blue Sport Band - Regular
+4,945
+₹32,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+New Apple Watch Series 6 (GPS + Cellular, 40mm) - Graphite Stainless Steel Case with Black Sport Band
+1,759
+₹69,900
+Save 25% with coupon
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 45mm) - Blue Aluminium Case with Abyss Blue Sport Band - Regular
+1,527
+₹51,180
+₹53,900 (5% off)
+Save extra with No Cost EMI
+FREE Delivery by Amazon
+Usually dispatched in 11 days.
+Apple Watch Series 7 (GPS + Cellular, 41mm) - Graphite Stainless Steel Case with Graphite Milanese Loop
+1,527
+₹73,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS + Cellular, 41mm) - Silver Stainless Steel Case with Silver Milanese Loop
+1,527
+₹73,900
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Apple Watch Series 7 (GPS, 45mm) - (Product) RED Aluminium Case with (Product) RED Sport Band - Regular
+1,527
+₹44,900
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 60259
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1656655913.920][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jul 01, 2022 11:41:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 01, 2022 11:41:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: 101
+Jul 01, 2022 11:41:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 103 of 101
+]]></system-err>
+  </testcase>
+  <testcase name="cleanUp[[TestResult name={null} status=CREATED method=AmazonTests.searchProductDataDriven(java.lang.String,java.lang.String)[pri:2000, instance:com.renewBuy.tests.AmazonTests@670002] output={null}]](0)" classname="com.renewBuy.tests.AmazonTests" time="0">
+    <failure message="Cannot invoke &quot;utils.ReportUtils.addLogs(String, String)&quot; because &quot;this.reportUtils&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "utils.ReportUtils.addLogs(String, String)" because "this.reportUtils" is null
+	at com.renewBuy.tests.BaseTest.cleanUp(BaseTest.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:613)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+  </testcase>
+  <testcase name="cleanUp[[TestResult name={null} status=CREATED method=AmazonTests.searchProductDataDriven(java.lang.String,java.lang.String)[pri:2000, instance:com.renewBuy.tests.AmazonTests@670002] output={null}]](0)" classname="com.renewBuy.tests.AmazonTests" time="0.001">
+    <failure message="Cannot invoke &quot;utils.ReportUtils.addLogs(String, String)&quot; because &quot;this.reportUtils&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "utils.ReportUtils.addLogs(String, String)" because "this.reportUtils" is null
+	at com.renewBuy.tests.BaseTest.cleanUp(BaseTest.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:613)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]></failure>
+  </testcase>
+  <testcase name="searchProductDataDriven[Samsung Mobile, Electronics](2)" classname="com.renewBuy.tests.AmazonTests" time="0">
+    <skipped message="Cannot invoke &quot;utils.ReportUtils.addLogs(String, String)&quot; because &quot;this.reportUtils&quot; is null"/>
+  </testcase>
+  <testcase name="searchProductDataDriven[Samsung Mobile, Electronics](2)" classname="com.renewBuy.tests.AmazonTests" time="14.469">
+    <system-out><![CDATA[Sponsored
+Samsung Galaxy S21 FE 5G (Lavender, 8GB, 128GB Storage)
+638
+₹54,999
+₹74,999 (27% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
++3 colors/patterns
+Sponsored
+Samsung Galaxy M33 5G (Mystique Green, 6GB, 128GB Storage) | 5nm Processor | 6000mAh Battery | Voice Focus | Upto 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately
+5,858
+Limited time deal
+₹17,999
+₹24,999 (28% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
++2 colors/patterns
+Samsung Galaxy M12 (Blue,6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime
+151,707
+Limited time deal
+₹12,499
+₹14,499 (14% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate
+151,707
+Limited time deal
+₹10,499
+₹12,999 (19% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Amazon's Choice
+Samsung Galaxy M32 (Light Blue, 6GB RAM, 128GB | FHD+ sAMOLED 90Hz Display | 6000mAh Battery | 64MP Quad Camera
+41,335
+Limited time deal
+₹14,999
+₹18,999 (21% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M12 (Black,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate
+151,707
+Limited time deal
+₹10,499
+₹12,999 (19% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M32 (Black, 4GB RAM, 64GB | FHD+ sAMOLED 90Hz Display | 6000mAh Battery | 64MP Quad Camera
+41,335
+Limited time deal
+₹12,999
+₹16,999 (24% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M21 2021 Edition (Arctic Blue, 4GB RAM, 64GB Storage) | FHD+ sAMOLED | 6 Months Free Screen Replacement for Prime (SM-M215GLBDINS)
+220,874
+Limited time deal
+₹11,499
+₹14,499 (21% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy A23 Peach, 8GB RAM, 128GB Storage with No Cost EMI/Additional Exchange Offers
+137
+₹19,999
+₹24,490 (18% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M12 (Black,6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime
+151,707
+Limited time deal
+₹12,499
+₹14,499 (14% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M32 5G (Sky Blue, 8GB RAM, 128GB Storage) | Dimensity 720 Processor | 5000mAh Battery| Knox Security
+28,741
+Limited time deal
+₹18,999
+₹25,990 (27% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy S20 FE 5G (Cloud Mint, 8GB RAM, 128GB Storage)
+15,832
+Limited time deal
+₹39,990
+₹74,990 (47% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M12 (White,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate
+151,707
+Limited time deal
+₹10,499
+₹12,999 (19% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M32 (Black, 6GB RAM, 128GB | FHD+ sAMOLED 90Hz Display | 6000mAh Battery | 64MP Quad Camera
+41,335
+Limited time deal
+₹14,999
+₹18,999 (21% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Sponsored
+Redmi Note 11 (Horizon Blue, 6GB RAM, 128GB Storage)|90Hz FHD+ AMOLED Display | Qualcomm® Snapdragon™ 680-6nm | Alexa Built-in | 33W Charger Included | Get 2 Months of YouTube Premium Free!
+24,661
+₹15,999
+₹19,999 (20% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Alexa Built-in
++2 colors/patterns
+Sponsored
+Redmi Note 11 Pro + 5G (Stealth Black, 6GB RAM, 128GB Storage) | 67W Turbo Charge | 120Hz Super AMOLED Display | Additional Exchange Offers | Charger Included| Get 2 Months of YouTube Premium Free!
+8,956
+Limited time deal
+₹20,999
+₹24,999 (16% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
++2 colors/patterns
+Samsung Galaxy M52 5G (ICY Blue, 6GB RAM, 128GB Storage) Latest Snapdragon 778G 5G | sAMOLED 120Hz Display
+14,489
+Limited time deal
+₹20,999
+₹34,999 (40% off)
+FREE Delivery by Amazon
+Samsung Galaxy M53 5G (Deep Ocean Blue, 6GB, 128GB Storage) | 108MP Camera | sAmoled+ 120Hz | 32MP Front Camera | 6nm Processor | 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately
+1,905
+Limited time deal
+₹26,499
+₹32,999 (20% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy A13 Black, 4GB RAM, 128GB Storage with No Cost EMI/Additional Exchange Offers, (SM-A135FZKHINS)
+160
+₹14,999
+₹19,990 (25% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M33 5G (Deep Ocean Blue, 6GB, 128GB Storage) | 5nm Processor | 6000mAh Battery | Voice Focus | Upto 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately
+5,858
+Limited time deal
+₹17,999
+₹24,999 (28% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
++2 colors/patterns
+Samsung Galaxy M33 5G (Deep Ocean Blue, 8GB, 128GB Storage) | 5nm Processor | 6000mAh Battery | Voice Focus | Upto 16GB RAM with RAM Plus | Travel Adapter to be Purchased Separately
+5,858
+Limited time deal
+₹19,499
+₹25,999 (25% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
++2 colors/patterns
+Samsung Galaxy M32 (Light Blue, 4GB RAM, 64GB | FHD+ sAMOLED 90Hz Display | 6000mAh Battery | 64MP Quad Camera
+41,335
+Limited time deal
+₹12,999
+₹16,999 (24% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M21 2021 Edition (Charcoal Black, 4GB RAM, 64GB Storage) | FHD+ sAMOLED | 6 Months Free Screen Replacement for Prime (SM-M215GZKDINS)
+220,874
+Limited time deal
+₹11,499
+₹14,499 (21% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M53 5G (Mystique Green, 6GB, 128GB Storage) | 108MP Camera | sAmoled+ 120Hz | 32MP Front Camera | 6nm Processor | 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately
+1,905
+Limited time deal
+₹26,499
+₹32,999 (20% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+SAMSUNG Galaxy F42 5G (Matte Aqua, 6GB RAM 128GB Storage)
+72
+₹15,190
+₹23,999 (37% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy M33 5G (Mystique Green, 6GB, 128GB Storage) | 5nm Processor | 6000mAh Battery | Voice Focus | Upto 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately
+5,858
+Limited time deal
+₹17,999
+₹24,999 (28% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
++2 colors/patterns
+Samsung Galaxy F42 5G (Matte Black, 128GB, 6GB RAM)
+60
+₹15,180
+₹23,999 (37% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
+Samsung Galaxy A13 Blue, 4GB RAM, 64GB Storage with No Cost EMI/Additional Exchange Offers, (SM-A135FLBGINS)
+160
+₹13,999
+₹18,490 (24% off)
+Save extra with No Cost EMI
+FREE Delivery by Amazon
+Sponsored
+Samsung Galaxy M53 5G (Deep Ocean Blue, 6GB, 128GB Storage) | 108MP Camera | sAmoled+ 120Hz | 32MP Front Camera | 6nm Processor | 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately
+1,905
+Limited time deal
+₹26,499
+₹32,999 (20% off)
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
++2 colors/patterns
+Sponsored
+Redmi Note 11T 5G (Stardust White, 6GB RAM, 128GB ROM)| Dimensity 810 5G | 33W Pro Fast Charging | Charger Included | Additional Exchange Offers|Get 2 Months of YouTube Premium Free!
+14,312
+Limited time deal
+₹15,999
+₹20,999 (24% off)
+Save extra with No Cost EMI
+Get it by tomorrow, July 2
+FREE Delivery by Amazon
++2 colors/patterns
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 58330
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1656655936.461][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jul 01, 2022 11:42:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 01, 2022 11:42:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: 101
+Jul 01, 2022 11:42:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 103 of 101
+]]></system-err>
+  </testcase>
+</testsuite>

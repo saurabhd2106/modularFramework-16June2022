@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Amazon Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="tests" name="Homepage tests on Chrome(failed)" verbose="0">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.renewBuy.tests.AmazonTests">
+        <methods>
+          <include name="setup"/>
+          <include name="afterClass"/>
+          <include name="preSetup"/>
+          <include name="initialise"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="cleanUp"/>
+          <include name="searchProductDataDriven"/>
+          <include name="cleanupAfterSuite"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- com.renewBuy.tests.AmazonTests -->
+    </classes>
+  </test> <!-- Homepage tests on Chrome(failed) -->
+</suite> <!-- Failed suite [Amazon Test Suite] -->
