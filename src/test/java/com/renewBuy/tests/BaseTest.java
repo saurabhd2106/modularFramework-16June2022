@@ -2,6 +2,8 @@ package com.renewBuy.tests;
 
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -41,12 +43,22 @@ public class BaseTest {
 
 	private static String configFilename;
 
+	private static Logger log;
+
 	static {
 		testExecutionStartTime = DateTimeUtils.getCurrentDateAndTime();
 
 		projectDirectory = System.getProperty("user.dir");
 
+		String log4JPropertyFile = projectDirectory + "config/log4j.properties";
+
+		System.setProperty("log4j.configurationFile", log4JPropertyFile);
+
 		configFilename = String.format("%s/config/%s", projectDirectory, "config.properties");
+
+		log = LogManager.getLogger(BaseTest.class);
+
+		log.info("Testing the log");
 
 		try {
 

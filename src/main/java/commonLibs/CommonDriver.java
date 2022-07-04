@@ -1,11 +1,15 @@
 package commonLibs;
 
+import java.net.URL;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class CommonDriver {
 
@@ -37,7 +41,50 @@ public class CommonDriver {
 
 			driver = new ChromeDriver();
 
-		} else if (browserType.equalsIgnoreCase("firefox")) {
+		} else if (browserType.equalsIgnoreCase("chrome-headless")) {
+
+			System.setProperty("webdriver.chrome.driver", projectDirectory + "/driver/chromedriver");
+			
+			ChromeOptions chromeOptions = new ChromeOptions();
+			
+			chromeOptions.addArguments("--headless");
+
+			driver = new ChromeDriver(chromeOptions);
+
+		} else if (browserType.equalsIgnoreCase("chrome-grid")) {
+
+			System.setProperty("webdriver.chrome.driver", projectDirectory + "/driver/chromedriver");
+			
+			ChromeOptions chromeOptions = new ChromeOptions();
+			
+			chromeOptions.setCapability("browserVersion", "103");
+			chromeOptions.setCapability("platformName", "Mac");
+			
+			// Showing a test name instead of the session id in the Grid UI
+			chromeOptions.setCapability("se:name", "My simple test"); 
+			
+			
+			driver = new RemoteWebDriver(new URL("http://10.10.50.40:4444"), chromeOptions);
+
+		} else if (browserType.equalsIgnoreCase("firefox-grid")) {
+
+			System.setProperty("webdriver.chrome.driver", projectDirectory + "/driver/chromedriver");
+			
+			FirefoxOptions ffOptions = new FirefoxOptions();
+			
+			ffOptions.setCapability("browserVersion", "103");
+			ffOptions.setCapability("platformName", "Mac");
+			
+			// Showing a test name instead of the session id in the Grid UI
+			ffOptions.setCapability("se:name", "My simple test"); 
+			
+			
+			driver = new RemoteWebDriver(new URL("http://10.10.50.40:4444"), ffOptions);
+
+		}
+		
+		
+		else if (browserType.equalsIgnoreCase("firefox")) {
 
 			System.setProperty("webdriver.gecko.driver", projectDirectory + "/driver/geckodriver");
 
